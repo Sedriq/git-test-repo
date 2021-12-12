@@ -25,7 +25,7 @@ public class StorageController {
     private final PermissionService permissionService;
 
     @GetMapping
-    public List<FileMetadata> getFilesMetadata(@RequestHeader("Authorization") String token) {
+    public List<FileMetadata> getFilesMetadataFeature(@RequestHeader("Authorization") String token) {
         return storageService.getFilesMetadata(TokenUtils.getUser(token));
     }
 
