@@ -20,7 +20,7 @@ import java.util.List;
 @RequestMapping("/api/storage")
 public class StorageController {
 
-    private final ObjectMapper objectMapper;
+    private final ObjectMapper updatedMapperName;
     private final StorageService storageService;
     private final PermissionService permissionService;
 
